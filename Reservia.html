@@ -12,25 +12,27 @@
 
 
 	<body>
-		<header>
-			<p><img src="Ressources/images/logo/Reservia.png" alt="Logo Reservia"/></p>
+		<header class="header">
+			<p><img class="reservia_logo" src="Ressources/images/logo/Reservia.png" alt="Logo Reservia"/></p>
 			<nav>
-				<a href="hebergements">Hébergements</a>
-				<a href="activites">Activités</a> 
-				<a href="inscription.html">S'inscrire</a>
+				<a class="hebergements_menu" href="hebergements.html">Hébergements</a>
+				<a class="activites_menu" href="activites.html">Activités</a> 
+				<a class="inscrire_menu" href="inscription.html">S'inscrire</a>
 			</nav>	
 		</header>
 
 		<div class="bloc_page">
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 			<p>En plein centre ville ou en pleine nature</p>
-			<form method="post" action="traitement.php">
-				<p>
-					<label for="localisation">logo localisation</label>
-					<input type="text" name="localisation" id="localisation">
-					<input type="submit" value="Rechercher" >
-				</p>
-			</form>
+			<div class="rechercher">
+				<form method="post" action="traitement.php">
+					<p>
+						<label for="localisation"><i class="fas fa-map-marker-alt"></i></label>
+						<input type="text" name="localisation" id="localisation">
+						<input type="submit" value="Rechercher" >
+					</p>
+				</form>
+			</div>
 			<div class="filtres">
 				<h3 class="filtres_title">Filtres</h3>
 				<p class="filtres_logo"><i  class="fas fa-money-bill-wave"></i> Économique</p>
@@ -47,37 +49,37 @@
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="auberge de cannebière">
 								<h3>Auberge la Cannebière</h3>
 								<p>Nuit à parir de <strong>25€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p>
 							</div>
 							<div class="hotel_port">
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/hotel_du_port.jpg" alt="hotel du port">
 								<h3>Hotel du Port</h3>
 								<p>Nuit à partir de <strong>52€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i></p>
 							</div>
 							<div class="hotel_mouettes">
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/hotel_les_mouettes.jpg" alt="hotel des mouettes">
 								<h3>Hotel des Mouettes</h3>
 								<p>Nuit à partir de <strong>76€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p>
 							</div>
 							<div class="hotel_mer">
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/hotel_de_la_mer.jpg" alt="hotel de la mer">
 								<h3>Hotel de la mer</h3>
 								<p>Nuit à partir de <strong>46€</strong></p>	
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>				
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i><i class="fas fa-star grey"></i></p>				
 							</div>
 							<div class="auberge_panier">
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge le panier">
 								<h3>Auberge le Panier</h3>
 								<p>Nuit à partir de <strong>23€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p>
 							</div>
 							<div class="hotel_amina">
 								<img class="hebergements_img" src="ressources/images/hebergements/4_small/hotel_chez_amina.jpg" alt="hotel chez amina">
 								<h3>Hotel chez Amina</h3>
 								<p>Nuit à partir de <strong>96€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i></p>
 							</div>		
 						</div>
 					<p>Afficher plus</p><!--lien clicable ou autre?-->
@@ -90,7 +92,7 @@
 							<div>
 								<h3>Hotel le Soleil du Matin</h3>
 								<p>Nuit à partir de <strong>128€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i></p>
 							</div>
 											
 						</div>
@@ -99,7 +101,7 @@
 							<div>
 								<h3>Au Coeur de l'Eau Chambres d'Hotes</h3>
 								<p>Nuit à partir de <strong>71€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p>
 							</div>
 						</div>
 						<div class="hotel_tout_bleu_blanc">
@@ -107,7 +109,7 @@
 							<div>
 								<h3>Hotel Tout Bleu et Blanc</h3>
 								<p>Nuit à partir de <strong>68€</strong></p>
-								<p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+								<p><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star blue"></i><i class="fas fa-star grey"></i></p>
 							</div>				
 						</div>
 					</div>
@@ -145,26 +147,40 @@
 		
 
 		<footer class="footer">
-			<div class="à propos">
+			<div class="a_propos">
 				<h2>A propos</h2>
 				<ul>
-					<li><a href="fonctionnement_du_site.html"></a> Fonctionnement du site</li>
-					<li><a href="cgv.html"></a> Conditions générales de vente</li>
-					<li><a href="données&confidentialité.html"></a> Données et confidentialité</li>
+					<li>
+						<a href="fonctionnement_du_site.html"> Fonctionnement du site</a>
+					</li>
+					<li>
+						<a href="cgv.html"> Conditions générales de vente</a>
+					</li>
+					<li>
+						<a href="données&confidentialité.html"> Données et confidentialité</a>
+					</li>
 				</ul>
 			</div>
 			<div class="nos_hebergements">
 				<h2>Nos hébergements</h2>
 				<ul>
-					<li><a href="charte_qualité.html"></a> Charte qualité</li>
-					<li><a href="soumettre_votre_hotel.html"></a> Soumettre votre hôtel</li>
+					<li>
+						<a href="charte_qualité.html"> Charte qualité </a>
+					</li>
+					<li>
+						<a href="soumettre_votre_hotel.html"> Soumettre votre hôtel</a>
+					</li>
 				</ul>
 			</div>
 			<div class="Assistance">
 				<h2>Assistance</h2>
 				<ul>
-					<li><a href="centre_aide.html"></a>Centre d'aide</li>
-					<li><a href="nous_contacter.html"></a>Nous contacter</li>
+					<li>
+						<a href="centre_aide.html">Centre d'aide</a>
+					</li>
+					<li>
+						<a href="nous_contacter.html">Nous contacter</a>
+					</li>
 				</ul>
 			</div>
 		</footer>

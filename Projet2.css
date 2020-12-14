@@ -8,6 +8,35 @@ body {
 
 /* HEADER */
 
+.reservia_logo {
+
+	width: 150px;
+	height: auto;
+
+}
+
+.header {
+
+	display: 
+
+}
+
+.header a {
+
+	text-decoration: none;
+}
+
+.activites_menu, .hebergements_menu {
+
+	border-top: 4px solid #F2F2F2;
+	padding-top: 6px;
+}
+
+.activites_menu:hover, .hebergements_menu:hover {
+
+	border-top: 4px solid #0065FC;
+}
+
 /* MAIN */
 
 .hebergements_populaires {
@@ -17,9 +46,16 @@ body {
 
 }
 
+.rechercher {
+
+	display: flex;
+}
+
+
 .filtres {
 
 	display: flex;
+	position: relative;
 }
 
 .filtres_title {
@@ -40,7 +76,20 @@ body {
 	background-color: #DEEBFF;
 	color: #0065FC;
 	padding: 20px;
+	border-radius: 23px;
+	position: absolute;
 }
+
+.blue {
+
+	color: #0065FC;
+}
+
+.grey {
+
+	color: #F2F2F2;
+}
+
 
 /* HEBERGEMENT */
 
@@ -72,8 +121,15 @@ body {
 	border: white 15px solid; 
 	border-radius: 15px;
 	margin : 30px;
+	box-shadow: 1px 1px 30px #D3D3D3;
+
 }
 
+.auberge_cannebiere:hover, .hotel_port:hover, .hotel_mouettes:hover, .hotel_mer:hover, .auberge_panier:hover, .hotel_amina:hover {
+
+	transform: scale(1.06);
+	transition-duration: 0.5s;
+}
 
 .auberge_cannebiere, .hotel_mer {
 
@@ -129,7 +185,15 @@ body {
 	border: white 15px solid; 
 	border-radius: 20px;
 	margin: 30px;
+	box-shadow: 1px 1px 30px #D3D3D3;
 
+
+}
+
+.hotel_soleil_matin:hover, .coeur_eau_chambre_hotes:hover, .hotel_tout_bleu_blanc:hover {
+
+	transform: scale(1.06);
+	transition-duration: 0.5s;
 }
 
 .hotel_soleil_matin {
@@ -170,7 +234,7 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	align-content: space-between;
-	height: 600px;
+	height: 550px;
 	justify-content: space-between;
 	border: 1px black solid;
 }
@@ -181,11 +245,25 @@ body {
 	flex-direction: column;
 	border: white 1px none; 
 	border-radius: 35px;
+	box-shadow: 1px 1px 30px #D3D3D3;
 }
+
+
+.les_activites:hover {
+	transform: scale(1.06);
+	transition-duration: 0.5s;
+} 
 
 .les_activites img {
 
 	border-radius: 20px 20px 0px 0px;
+	
+
+}
+
+.les_activites h3 {
+
+	padding-left: 20px;
 }
 
 .vieux_port_img {
@@ -236,10 +314,24 @@ body {
 
 	display: flex;
 	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 400px;
 }
 
+.footer li {
 
+	list-style: none;
 
+}
+
+.footer a {
+
+	text-decoration: none;
+	color: black;
+}
 
 
 
