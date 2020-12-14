@@ -1,9 +1,256 @@
-#hébergements
-{
+body {
+
+	max-width: 80%;
+	margin: auto;
+	font-family: 'Raleway', sans-serif;
 
 }
 
-#auberge_cannebière
-{
+/* HEADER */
+
+/* MAIN */
+
+.hebergements_populaires {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
 }
+
+.filtres {
+
+	display: flex;
+}
+
+.filtres_title {
+
+	margin-right: 40px;
+}
+
+.filtres_logo {
+
+	margin-right: 40px;
+	border: 1px grey solid;
+	padding: 15px;
+	border-radius: 50px;
+}
+
+.fa-money-bill-wave {
+
+	background-color: #DEEBFF;
+	color: #0065FC;
+	padding: 20px;
+}
+
+/* HEBERGEMENT */
+
+.hebergements  {
+
+	background-color: #F2F2F2;
+	border: 1px red solid;
+	width: 60%;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+
+.hebergements_flex {
+
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+	border: 1px black solid;
+}
+
+
+
+.auberge_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .auberge_panier, .hotel_amina {
+	
+	background: white;
+	border: white 15px solid; 
+	border-radius: 15px;
+	margin : 30px;
+}
+
+
+.auberge_cannebiere, .hotel_mer {
+
+	margin: 0px 15px 20px 0px;
+}
+
+.hotel_port, .auberge_panier {
+
+	margin: 0px 15px 15px 15px;	
+}
+
+.hotel_mouettes, .hotel_amina {
+
+	margin: 0px 0px 15px 15px;
+}
+
+.hebergements_img {
+
+	width: 250px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+
+
+/* POPULAIRE */
+
+.populaires  {
+
+	background-color: #F2F2F2;
+	border: 1px red solid;
+	width: 25%;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.populaires_flex {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-content: space-around;
+	border: 1px black solid;
+}
+
+
+
+.hotel_soleil_matin, .coeur_eau_chambre_hotes, .hotel_tout_bleu_blanc {
+
+	display: flex;
+	justify-content: space-between;
+	background: white;
+	border: white 15px solid; 
+	border-radius: 20px;
+	margin: 30px;
+
+}
+
+.hotel_soleil_matin {
+
+	margin: 0px 0px 15px 0px;
+}
+
+.coeur_eau_chambre_hotes {
+
+	margin: 15px 0px 15px 0px;
+}
+
+.hotel_tout_bleu_blanc {
+
+	margin: 15px 0px 0px 0px;
+}
+
+.populaires_img {
+
+	width: 130px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 15px 0px 0px 15px;
+	padding-right: 30px;
+}
+
+ 
+/* ACTIVITES */
+
+.activites {
+
+	padding: 20px;
+	border: 1px red solid;
+}
+
+.activites_flex {
+
+	display: flex;
+	flex-flow: column wrap;
+	align-content: space-between;
+	height: 600px;
+	justify-content: space-between;
+	border: 1px black solid;
+}
+
+.les_activites {
+
+	display: flex;
+	flex-direction: column;
+	border: white 1px none; 
+	border-radius: 35px;
+}
+
+.les_activites img {
+
+	border-radius: 20px 20px 0px 0px;
+}
+
+.vieux_port_img {
+
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+}
+.fort_pomegues_img {
+
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.iles_frioul_img {
+
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.parc_national_calanques_img {
+
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+}
+
+.notre_dame_de_la_garde_img {
+
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.parc_longchamp_img {
+
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
+/* FOOTER */
+
+
+.footer {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
