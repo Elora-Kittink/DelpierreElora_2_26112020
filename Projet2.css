@@ -1,5 +1,5 @@
 body {
-
+	height: 100%;
 	max-width: 80%;
 	margin: auto;
 	font-family: 'Raleway', sans-serif;
@@ -29,6 +29,11 @@ body {
 
 
 /* BODY */
+
+.main {
+
+	position: relative;
+}
 
 .menu {
 
@@ -119,7 +124,6 @@ body {
 	left: 0px;
 	top: 0px;
 	background-color: #DEEBFF;
-	background-size: 50px;
 	color: #0065FC;
 	padding : 17px;
 	border-radius: 50px
@@ -210,7 +214,7 @@ body {
 
 	background-color: #F2F2F2;
 	border: 1px red none;
-	width: 25%;
+	width: 376px;
 	border-radius: 20px;
 	padding: 30px;
 }
@@ -283,7 +287,7 @@ body {
 	display: flex;
 	flex-flow: column wrap;
 	align-content: space-between;
-	height: 550px;
+	height: 450px;
 	justify-content: space-between;
 	border: 1px black none;
 }
@@ -356,6 +360,22 @@ body {
 	object-fit: cover;
 }
 
+.petites_img {
+
+	width: 300px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.grandes_img {
+
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+}
+
+
+
 /* FOOTER */
 
 
@@ -368,6 +388,11 @@ body {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 400px;
+}
+
+.footer_block {
+
+	display: block;
 }
 
 .footer li {
@@ -387,9 +412,75 @@ body {
 
 @media screen and (max-width: 1600px) {
 
+	.populaires {
+
+		order: 1;
+		flex-flow: row;	
+		width: 100%;
+	}
+
+	.populaires_flex {
+
+		flex-flow: row;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.hotel_soleil_matin, .coeur_eau_chambre_hotes, .hotel_tout_bleu_blanc {
+
+		width: 300px;
+		height: 160px;
+		margin: 0px;
+	}
+
+	.populaires h3 {
+
+		margin: 0px;
+	}
+
+	.hebergements {
+
+		order: 2;
+		width: 1080px;
+		margin-top: 30px;
+	}
+
+
 	.activites_flex {
 
-		flex-flow: column;
+		flex-flow: row wrap;
+		height: auto;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.petites_img, .grandes_img {
+
+		height: 400px;
+	}
+
+	.grandes_activites, .petites_activites {
+
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.footer {
+
+		padding: 0px;
+	}
+
+	.a_propos h2 {
+
+		padding-left: 40px;
+	}
+
+	.assistance ul {
+
+		padding-left: 0px;
+		padding-right: 35px;
 	}
 }
 
