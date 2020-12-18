@@ -26,18 +26,28 @@ body {
 	text-decoration: none;
 }
 
-.activites_menu, .hebergements_menu {
+
+
+/* BODY */
+
+.menu {
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hebergements_menu, .activites_menu {
 
 	border-top: 4px solid #F2F2F2;
-	padding-top: 6px;
+	padding-right: 40px;
+	padding-left: 30px;
+	padding-top: 30px;
 }
 
-.activites_menu:hover, .hebergements_menu:hover {
+.inscrire_menu {
 
-	border-top: 4px solid #0065FC;
+	padding-top: 34px;
 }
-
-/* MAIN */
 
 .hebergements_populaires {
 	display: flex;
@@ -46,15 +56,46 @@ body {
 
 }
 
+
+.activites_menu:hover, .hebergements_menu:hover {
+
+	border-top: 4px solid #0065FC;
+}
 .rechercher {
 
 	display: flex;
+	justify-content: flex-start;
 }
 
+.fa-map-marker-alt {
 
-.filtres {
+	background-color: #F2F2F2;
+	padding: 15px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+#localisation {
+
+	border-top: 2px solid #F2F2F2;
+	border-right: 2px solid #0065FC;
+	border-bottom: 2px solid #F2F2F2;
+	border-left: 2px solid #F2F2F2;
+	padding: 10px 4px 6px 8px;
+}
+
+.rechercher_submit {
+
+	background-color: #0065FC;
+	border : 1px solid #0065FC;
+	padding: 10px 10px 7px 10px;
+	border-radius: 0px 15px 15px 0px;
+	color: white;
+}
+
+.les_filtres {
 
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 }
 
@@ -63,23 +104,31 @@ body {
 	margin-right: 40px;
 }
 
-.filtres_logo {
+.filtres {
 
 	margin-right: 40px;
 	border: 1px grey solid;
 	padding: 15px;
 	border-radius: 50px;
+	position: relative;
 }
 
-.fa-money-bill-wave {
+.filtres_logo {
 
-	background-color: #DEEBFF;
-	color: #0065FC;
-	padding: 20px;
-	border-radius: 23px;
 	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #DEEBFF;
+	background-size: 50px;
+	color: #0065FC;
+	padding : 17px;
+	border-radius: 50px
 }
 
+.filtres_txt {
+
+	padding-left: 40px;
+}
 .blue {
 
 	color: #0065FC;
@@ -96,7 +145,7 @@ body {
 .hebergements  {
 
 	background-color: #F2F2F2;
-	border: 1px red solid;
+	border: 1px red none;
 	width: 60%;
 	border-radius: 20px;
 	padding: 30px;
@@ -110,7 +159,7 @@ body {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-between;
-	border: 1px black solid;
+	border: 1px black none;
 }
 
 
@@ -160,7 +209,7 @@ body {
 .populaires  {
 
 	background-color: #F2F2F2;
-	border: 1px red solid;
+	border: 1px red none;
 	width: 25%;
 	border-radius: 20px;
 	padding: 30px;
@@ -172,7 +221,7 @@ body {
 	flex-direction: column;
 	justify-content: space-around;
 	align-content: space-around;
-	border: 1px black solid;
+	border: 1px black none;
 }
 
 
@@ -226,7 +275,7 @@ body {
 .activites {
 
 	padding: 20px;
-	border: 1px red solid;
+	border: 1px red none;
 }
 
 .activites_flex {
@@ -236,7 +285,7 @@ body {
 	align-content: space-between;
 	height: 550px;
 	justify-content: space-between;
-	border: 1px black solid;
+	border: 1px black none;
 }
 
 .les_activites {
@@ -334,7 +383,15 @@ body {
 }
 
 
+/*MEDIA QUERIES*/
 
+@media screen and (max-width: 1600px) {
+
+	.activites_flex {
+
+		flex-flow: column;
+	}
+}
 
 
 
