@@ -168,7 +168,7 @@ body {
 
 
 
-.auberge_cannebiere, .hotel_port, .hotel_mouettes, .hotel_mer, .auberge_panier, .hotel_amina {
+.hebergements_items {
 	
 	background: white;
 	border: white 15px solid; 
@@ -178,7 +178,7 @@ body {
 
 }
 
-.auberge_cannebiere:hover, .hotel_port:hover, .hotel_mouettes:hover, .hotel_mer:hover, .auberge_panier:hover, .hotel_amina:hover {
+.hebergements_items:hover {
 
 	transform: scale(1.06);
 	transition-duration: 0.5s;
@@ -230,7 +230,7 @@ body {
 
 
 
-.hotel_soleil_matin, .coeur_eau_chambre_hotes, .hotel_tout_bleu_blanc {
+.populaires_items {
 
 	display: flex;
 	justify-content: space-between;
@@ -243,7 +243,7 @@ body {
 
 }
 
-.hotel_soleil_matin:hover, .coeur_eau_chambre_hotes:hover, .hotel_tout_bleu_blanc:hover {
+.populaires_items:hover {
 
 	transform: scale(1.06);
 	transition-duration: 0.5s;
@@ -319,46 +319,6 @@ body {
 	padding-left: 20px;
 }
 
-.vieux_port_img {
-
-	width: 300px;
-	height: 400px;
-	object-fit: cover;
-}
-.fort_pomegues_img {
-
-	width: 300px;
-	height: 200px;
-	object-fit: cover;
-}
-
-.iles_frioul_img {
-
-	width: 300px;
-	height: 200px;
-	object-fit: cover;
-}
-
-.parc_national_calanques_img {
-
-	width: 300px;
-	height: 400px;
-	object-fit: cover;
-}
-
-.notre_dame_de_la_garde_img {
-
-	width: 300px;
-	height: 200px;
-	object-fit: cover;
-}
-
-.parc_longchamp_img {
-
-	width: 300px;
-	height: 200px;
-	object-fit: cover;
-}
 
 .petites_img {
 
@@ -485,6 +445,28 @@ body {
 }
 
 
+@media screen and (max-width: 1350px) {
+
+	.populaires_flex {
+
+		flex-direction: column;
+		justify-content: space-between;
+		width: auto;
+	}
+
+	.hotel_soleil_matin, .coeur_eau_chambre_hotes, .hotel_tout_bleu_blanc {
+
+		margin: 10px;
+		width: 450px;
+		height: 200px;
+	}
+
+	.populaires_img {
+
+		width: 250px;
+		height: 200px;
+	}
+}
 
 
 
