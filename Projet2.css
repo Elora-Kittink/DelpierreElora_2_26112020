@@ -26,13 +26,31 @@ body {
 	text-decoration: none;
 }
 
+.inscrire_petit {
 
+	position: absolute;
+	top: 30px;
+	right: 10px;
+	display: none;
+}
 
 /* BODY */
 
 .main {
 
 	position: relative;
+}
+
+.bloc_page p {
+
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.les_filtres {
+
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .menu {
@@ -112,21 +130,44 @@ body {
 .filtres {
 
 	margin-right: 40px;
-	border: 1px grey solid;
+	border: 3px #F2F2F2 solid;
 	padding: 15px;
 	border-radius: 50px;
 	position: relative;
+	height: 20px;
 }
 
 .filtres_logo {
 
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: -2px;
+	top: -2px;
 	background-color: #DEEBFF;
 	color: #0065FC;
+	width: 19px;
+	height: 19px;
 	padding : 17px;
 	border-radius: 50px
+
+}
+
+.fas {
+
+	width: 19px;
+	height: 19px;
+}
+
+.fa-info {
+
+	color: #0065FC;
+	width: 8px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border: 2px #F2F2F2 solid;
+	border-radius: 20px;
+
 }
 
 .filtres_txt {
@@ -166,7 +207,11 @@ body {
 	border: 1px black none;
 }
 
+.hebergements_items h3, p {
 
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
 
 .hebergements_items {
 	
@@ -241,6 +286,17 @@ body {
 	box-shadow: 1px 1px 30px #D3D3D3;
 
 
+}
+
+.populaires_items h3, p {
+
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.populaires_items i {
+
+	margin-top: 40px
 }
 
 .populaires_items:hover {
@@ -454,7 +510,7 @@ body {
 		width: auto;
 	}
 
-	.hotel_soleil_matin, .coeur_eau_chambre_hotes, .hotel_tout_bleu_blanc {
+	.populaires_items {
 
 		margin: 10px;
 		width: 450px;
@@ -466,7 +522,143 @@ body {
 		width: 250px;
 		height: 200px;
 	}
+
+	.populaires_texts {
+
+		padding-top: 30px;
+	}
+
+	.hebergements_img {
+
+		width: 300px;
+		height: 200px;
+	}
+
+	.hebergements_items {
+
+		width: 300px;
+		height: 320px;
+		margin: 10px;
+	}
+
+	.petites_img, .grandes_img {
+
+		height: 200px;
+		width: 350px;
+	}
 }
+
+
+@media screen and (max-width: 950px) {
+
+	body, html {
+
+		max-width: 100%;
+	}
+
+	.reservia_logo {
+
+		padding-left: 20px;
+	}
+
+	.inscrire_petit {
+
+		display: block;
+		margin-right: 40px;
+	}
+
+	.bloc_page h1, p, div {
+
+		padding-left: 5px;
+	}
+
+	.inscrire_menu {
+
+		display: none;
+	}
+
+	.filtres {
+
+		margin-right: 3px;
+		margin-bottom: 5px;
+	}
+
+	.hebergements_menu, .activites_menu {
+
+		justify-content: space-between;
+		width: 100%;
+		padding-left: 60px;
+	}
+
+	
+
+	.main, .bloc_page, .hebergements_populaires, .populaires, .hebergements_flex, .populaires_flex {
+
+		max-width: 100%;
+	}
+	  
+
+	 
+
+	.hebergements {
+
+		background-color: transparent;
+		max-width: 100%;
+	}
+
+	.hebergements_flex, .populaires_flex, .populaires_items {
+
+		align-items: center;
+	}
+
+	.hebergements_items {
+
+		width: 500px;
+	}
+
+	.hebergements_img {
+
+		width: 500px;
+		height: 250px;
+	}
+
+	.grandes_img, .petites_img {
+
+		width: 500px;
+		height: 250px;
+	}
+
+	.footer_block {
+
+		width: 600px;
+	}
+
+	.footer {
+
+		flex-direction: column;
+		align-items:flex-start;
+		max-width: 100%;
+	}
+
+	.a_propos h2, ul { 
+
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+
+	.nos_hebergements h2, ul {
+
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+
+	.assistance {
+
+		padding-left: 30px;
+		padding-right: 0px;
+	}
+}
+
 
 
 
