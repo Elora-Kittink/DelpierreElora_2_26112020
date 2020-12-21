@@ -36,6 +36,7 @@ body {
 
 /* BODY */
 
+
 .main {
 
 	position: relative;
@@ -61,7 +62,7 @@ body {
 
 .hebergements_menu, .activites_menu {
 
-	border-top: 4px solid #F2F2F2;
+	border-top: 4px solid white;
 	padding-right: 40px;
 	padding-left: 30px;
 	padding-top: 30px;
@@ -70,6 +71,7 @@ body {
 .inscrire_menu {
 
 	padding-top: 34px;
+	font-weight: bold;
 }
 
 .hebergements_populaires {
@@ -79,6 +81,10 @@ body {
 
 }
 
+.hebergements_populaires p {
+
+	line-height: 2px;
+}
 
 .activites_menu:hover, .hebergements_menu:hover {
 
@@ -130,7 +136,7 @@ body {
 .filtres {
 
 	margin-right: 40px;
-	border: 3px #F2F2F2 solid;
+	border: 2px #F2F2F2 solid;
 	padding: 15px;
 	border-radius: 50px;
 	position: relative;
@@ -201,25 +207,35 @@ body {
 
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
 	flex-wrap: wrap;
 	align-content: space-between;
 	border: 1px black none;
 }
 
-.hebergements_items h3, p {
+.hebergements_items h3 {
 
 	margin-top: 2px;
 	margin-bottom: 2px;
+	padding-left: 10px;
+}
+
+.hebergements_items p {
+
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-left: 10px;
+	line-height: 20px;
 }
 
 .hebergements_items {
 	
 	background: white;
-	border: white 15px solid; 
-	border-radius: 15px;
+	border: white 5px solid; 
+	border-radius: 20px;
 	margin : 30px;
 	box-shadow: 1px 1px 30px #D3D3D3;
+	height: 230px;
+	width: 270px;
 
 }
 
@@ -246,7 +262,7 @@ body {
 
 .hebergements_img {
 
-	width: 250px;
+	width: 270px;
 	height: 150px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
@@ -280,7 +296,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	background: white;
-	border: white 15px solid; 
+	border: white 5px solid; 
 	border-radius: 20px;
 	margin: 30px;
 	box-shadow: 1px 1px 30px #D3D3D3;
@@ -292,6 +308,7 @@ body {
 
 	margin-top: 2px;
 	margin-bottom: 2px;
+	padding-left: 0px;
 }
 
 .populaires_items i {
@@ -404,6 +421,8 @@ body {
 	padding-bottom: 20px;
 	padding-left: 20px;
 	padding-right: 400px;
+	margin-top: 40px;
+	line-height: 30px;
 }
 
 .footer_block {
@@ -423,6 +442,15 @@ body {
 	color: black;
 }
 
+.footer_categories {
+
+	padding-left: 40px;
+}
+
+.footer_categories ul {
+
+	padding-left: 0px;
+}
 
 /*MEDIA QUERIES*/
 
@@ -488,10 +516,7 @@ body {
 		padding: 0px;
 	}
 
-	.a_propos h2 {
-
-		padding-left: 40px;
-	}
+	
 
 	.assistance ul {
 
@@ -554,6 +579,7 @@ body {
 	body, html {
 
 		max-width: 100%;
+		padding-left: 5px;
 	}
 
 	.reservia_logo {
@@ -565,12 +591,10 @@ body {
 
 		display: block;
 		margin-right: 40px;
+		font-weight: bold;
+		text-decoration: none;
 	}
 
-	.bloc_page h1, p, div {
-
-		padding-left: 5px;
-	}
 
 	.inscrire_menu {
 
@@ -598,7 +622,12 @@ body {
 	}
 	  
 
-	 
+	 .hebergements_menu, .activites_menu {
+
+	 	border-top: none;
+	 	border-bottom: 4px solid #F2F2F2;
+	 	padding-bottom: 20px;
+	 }
 
 	.hebergements {
 
@@ -630,7 +659,7 @@ body {
 
 	.footer_block {
 
-		width: 600px;
+		width: 100%;
 	}
 
 	.footer {
