@@ -53,11 +53,7 @@ body {
 	margin-bottom: 15px;
 }
 
-.les_filtres {
 
-	margin-top: 30px;
-	margin-bottom: 30px;
-}
 
 .menu {
 
@@ -134,17 +130,19 @@ body {
 	color: white;
 }
 
-.les_filtres {
+.filtres_flex {
 
+	margin-top: 30px;
+	margin-bottom: 30px;
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
 }
 
 .filtres_title {
 
 	margin-right: 40px;
 }
+
 
 .filtres {
 
@@ -156,10 +154,7 @@ body {
 	height: 20px;
 }
 
-.filtres:hover {
 
-	color: #0065FC;
-}
 
 .filtres_logo {
 
@@ -173,6 +168,11 @@ body {
 	padding : 17px;
 	border-radius: 50px
 
+}
+
+.filtres:hover {
+
+	color: #0065FC;
 }
 
 .fas {
@@ -230,6 +230,20 @@ body {
 	align-content: space-between;
 }
 
+
+
+.hebergements_items {
+	
+	background: white;
+	border: white 5px solid; 
+	border-radius: 20px;
+	margin : 30px;
+	box-shadow: 1px 1px 30px #D3D3D3;
+	height: 230px;
+	width: 270px;
+
+}
+
 .hebergements_items h3 {
 
 	margin-top: 2px;
@@ -243,18 +257,6 @@ body {
 	margin-bottom: 2px;
 	padding-left: 10px;
 	line-height: 20px;
-}
-
-.hebergements_items {
-	
-	background: white;
-	border: white 5px solid; 
-	border-radius: 20px;
-	margin : 30px;
-	box-shadow: 1px 1px 30px #D3D3D3;
-	height: 230px;
-	width: 270px;
-
 }
 
 .hebergements_items:hover {
@@ -406,7 +408,7 @@ body {
 	justify-content: space-between;
 }
 
-.les_activites {
+.activites_items {
 
 	display: flex;
 	flex-direction: column; 
@@ -415,19 +417,19 @@ body {
 }
 
 
-.les_activites:hover {
+.activites_items:hover {
 	transform: scale(1.06);
 	transition-duration: 0.5s;
 } 
 
-.les_activites img {
+.activites_items img {
 
 	border-radius: 20px 20px 0px 0px;
 	
 
 }
 
-.les_activites h3 {
+.activites_items h3 {
 
 	padding-left: 20px;
 }
@@ -729,7 +731,7 @@ body {
 		justify-content: center;
 	}
 
-	.les_activites {
+	.activites_items {
 
 		width: 350px;
 		height: 230px;
@@ -880,7 +882,7 @@ body {
 		
 	}
 
-	.les_activites {
+	.activites_items {
 
 		width: 300px;
 		height: 200px;
